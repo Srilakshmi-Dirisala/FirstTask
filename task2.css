@@ -1,0 +1,20 @@
+.maincontainer {
+    display:flex;
+    flex-direction:column ;
+    height: 97%;
+    gap:2px;
+}
+.header {
+    border: 3px solid red;
+    padding:10px;
+}
+.main {
+    border: 3px solid red;
+    padding:10px;
+    flex:400px;
+    
+}
+.footer {
+    border: 3px solid red;
+    padding:10px;
+}
