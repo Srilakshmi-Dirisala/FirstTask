@@ -1,0 +1,28 @@
+.container {
+    display:flex;
+    gap: 1rem;
+    padding: 10px;
+    border: 1px solid bisque;
+
+}
+.leftcontainer {
+     display: flex;
+     
+     flex-direction: column;
+     gap: 1rem;
+     border: 1px solid gold;
+     padding: 10px;
+     width: 100px;
+}
+.rightcontainer {
+    display:flex;
+    flex-direction: row;
+    border:1px solid gray;
+    padding: 10px;
+    gap: 1rem;
+    
+}
+.new {
+    border: 3px solid honeydew;
+    padding:10px;
+}

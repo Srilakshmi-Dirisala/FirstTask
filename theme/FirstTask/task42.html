@@ -1,0 +1,99 @@
+<html>
+<meta name="viewport" content="width=device-width, initial-scale=1"> 
+<head>
+    <style>
+    .container {
+    display:grid;
+    gap:10px;
+    height:100vh;
+    grid: auto;
+}
+.header {
+    grid-column: 1/13;
+    padding:10px;
+    border:3px solid red;
+    
+}
+.sidebar{
+    grid-area: 2/1/11/4;
+    padding:10px;
+    border:3px solid red;
+}
+.navigation{
+    grid-area: 2/4/3/11;
+    padding:10px;
+    border:3px solid red;
+}
+.main{
+    grid-area:3/4/11/11 ;
+    padding:10px;
+    border:3px solid red;
+    
+}
+.ads{
+    grid-area:2/11/11/13;
+    padding:10px;
+    border:3px solid red;
+    
+}
+.footer{
+    grid-column: 1/13;
+    padding:10px;
+    border:3px solid red; 
+}
+@media (max-width:900px){
+    .container {
+        flex-wrap: wrap;
+    }
+    .header{
+        flex:1 1 50%;
+    }
+    .navigation{
+        flex:1 1 50%;
+}
+.sidebar{
+    flex: 1 1 50%;
+}
+.main{
+    flex:1 1 50%;  
+}
+.ads{
+    flex:1 1 50%;
+}
+.footer{
+   flex:1 1 50%;
+}
+}
+@media (max-width:600px){
+    .header{
+        grid-column: 1/13;
+    }
+    .navigation{
+    grid-column: 1/13;
+}
+.main{
+    grid-area: 3/1/9/13;
+}
+.sidebar{
+    grid-area:10/1/10/13;    
+}
+.ads{
+    grid-area:11/1/11/13;
+}
+.footer{
+    grid-area:12/1/12/13;
+}
+}
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">header</div>
+        <div class="sidebar">sidebar</div>
+        <div class="navigation">navigation</div>
+        <div class="main">main</div>
+        <div class="ads">ads</div>
+        <div class="footer">footer</div>
+    </div>
+</body>
+</html>

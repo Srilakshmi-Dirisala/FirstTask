@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        .bg_img{
+            width:100px;
+            height:100px;
+            background-image: url(https://images.pexels.com/photos/531880/pexels-photo-531880.jpeg?cs=srgb&dl=pexels-pixabay-531880.jpg&fm=jpg);
+        }
+    </style>
+</head>
+<body style="background-color: #bcd5e3;">
+    <h1>This is the first task</h1>
+    <div class="bg_img">
+     
+    </div>
+    <h2>This is the heading 2</h2>
+    <p>In the below link contain the java oops information.<br><a href=" https://www.w3schools.com/java/java_oop.asp">click here for w3 shools</a></p>
+    <img src="C:\Users\Lenovo\Desktop\wwshool.png" alt="image not found" height="100px" width="100px">
+    <ol>
+        <li style="color:aqua">This is the ordered list1</li>
+        <li style="color:antiquewhite">This is the ordered list2</li>
+        <li style="color:chartreuse">This is the ordered list3</li>
+    </ol>
+    <ul>
+        <li style="color:blueviolet">This is the unordered list1</li>
+        <li style="color:cyan">This is the unordered list1</li>
+        <li style="color:darkorange">This is the unordered list1</li>
+    </ul>
+    <a href="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRPTYz6zMmmk92pD_-XM5XPhseOP3QsglcqGg&usqp=CAU" download="my image"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRPTYz6zMmmk92pD_-XM5XPhseOP3QsglcqGg&usqp=CAU" alt="image not found" height="100px" width="100px"></a>
+    <p><b>W3Schools</b> is a school for <i>web developers</i>, covering all the aspects of web development: HTML Tutorial. CSS Tutorial.<strike>JavaScript Tutorial.</strike></p>
+    <form class="form1">
+       <h1>select the course</h1>
+       <label for="course">Course:</label>
+      <input type="radio" name="Developers" value="frontend" id="course">frontend
+      <input type="radio" name="Developers" value="Backend" id="course"checked>Backend<br><br>
+       <h1>Please select your languages:</h1>
+       <label for="PL">pl:</label>
+       <input type="checkbox" name="pl" value="html" id="pl"checked>Html
+       <input type="checkbox" name="pl" value="css" id="pl">Css
+       <input type="checkbox" name="pl" value="javaScript" id="pl">javaScript
+       <input type="checkbox" name="pl" value="java" id="pl">java<br><br>
+       <label>full name:</label>
+       <input type="text" maxlength="30" id="fn"><br><br>
+       <label>Roll number:</label>
+       <input type="number" maxlength="100" minlength="-10" id="Rn"><br><br>
+       <label>email :</label>
+       <input type="email" id="em"><br><br>
+       <label>password :</label>
+       <input type="password" minlength="12" id="pass"><br><br>
+       <label>Date:</label>
+       <input type="date" min="2023-01-21" id="date" ><br><br>
+    </form>
+    <button onclick="submitform()">Submit</button>
+    <script>
+        function submitform(){
+            course=document.getElementById("course").value;
+            pl=document.getElementById("pl").value;
+            fullName=document.getElementById("fn").value;
+            rollNumber=document.getElementById("Rn").value;
+            email=document.getElementById("em").value;
+            password=document.getElementById("pass").value;
+            date=document.getElementById("date").value;
+            console.log(fullName)
+            console.log(rollNumber)
+            console.log(email)
+            console.log(password)
+            console.log(date)
+            console.log(course)
+            console.log(pl)
+        }
+    </script>
+</body>
+</html>
