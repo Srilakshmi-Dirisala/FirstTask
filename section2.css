@@ -1,10 +1,11 @@
-.heading1 {
+
+#section2.heading1 {
     font-family: 'Poppins', sans-serif;
     font-size: 42px;
     color: #051c1d;
 
 }
-.btn-sign-up:hover{
+#section2.btn-sign-up:hover{
     color: #000 !important;
     background-color: #fff !important;
     border-color: #290267dc;
@@ -12,26 +13,27 @@
     
 
 }
-.card:hover {
+#section2.card:hover {
 border: 2px solid #5846e0;   
 }
-.bi-unlock-fill {
+#section2.bi-unlock-fill {
     color :#5846e0;
 } 
 
-.bi-arrow-repeat {
+#section2.bi-arrow-repeat {
     color :#5846e0;
 }
-.bi-qr-code {
+#section2.bi-qr-code {
     color :#5846e0;
 }
-.container{
+#section2.container{
     font-family: 'Poppins', sans-serif;
     
 }
-.card {
+#section2.card {
     height: 230px;
     justify-content: center;
     text-align: center;
 }
+
     
