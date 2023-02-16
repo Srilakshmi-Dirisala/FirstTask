@@ -1,0 +1,23 @@
+body {
+    background-image: url("./images/backgroundimg.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.bttn {
+    background-color: rgb(243, 119, 185);
+}
+.bit {
+    color:rgb(19, 229, 19)
+}
+.mid {
+   background-color: rgb(63, 2, 96);
+  
+   border: 1px solid white;
+}
+.mint {
+    color: deeppink;
+}
+.main {
+  letter-spacing: -2px;
+}
+
