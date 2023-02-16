@@ -1,57 +1,231 @@
-<html>
-    <head>
-     <title>Assignment 1</title>
-     <meta name="viewport" content="width=device-width, initial-scale=1">
-     <style>
-        .container{
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href=".//css/bootstrap.min.css" rel="stylesheet">
+    <script src="./js/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" href="./landingpage2.css">
+</head>
+<body>
+    
+    <nav class="navbar navbar-expand-lg navbar-light bg-primary">
+        <div class="container-fluid">
             
-            display: flex;
-            flex-direction: column;
-            gap: 10px;
-            height: 97%;
-            
-        }
-        .headeritem{
-            border: 1px  red solid;
-            width:auto;
-            height: 100px;
-            border-radius: 20px;
-            text-align: center;
-            
-        }
-        
-        .mainitem{
-            border: 1px red solid;
-            border-radius: 10px;
-            text-align: center;
-            flex: 1; 
-        }
-        
-        .footeritem{
-             width: 99%;
-             text-align: center;
-             border-radius: 10px;
-             border: 1px red solid;
-             height: 100px;
-            
-        }
-       
-      
-        
-     </style>
-    </head>
-    <body>
-        <div class="container">
-            <div class="headeritem">
-               <h1>Header</h1>
-            </div>
-            <div class="mainitem">
-                <h1>Main</h1>
-            </div>
-            <div class="footeritem">
-                <h1>Footer</h1>
+            <a href="#" class="navbar-brand text-light"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-bootstrap" viewBox="0 0 16 16">
+                <path d="M5.062 12h3.475c1.804 0 2.888-.908 2.888-2.396 0-1.102-.761-1.916-1.904-2.034v-.1c.832-.14 1.482-.93 1.482-1.816 0-1.3-.955-2.11-2.542-2.11H5.062V12zm1.313-4.875V4.658h1.78c.973 0 1.542.457 1.542 1.237 0 .802-.604 1.23-1.764 1.23H6.375zm0 3.762V8.162h1.822c1.236 0 1.887.463 1.887 1.348 0 .896-.627 1.377-1.811 1.377H6.375z"/>
+                <path d="M0 4a4 4 0 0 1 4-4h8a4 4 0 0 1 4 4v8a4 4 0 0 1-4 4H4a4 4 0 0 1-4-4V4zm4-3a3 3 0 0 0-3 3v8a3 3 0 0 0 3 3h8a3 3 0 0 0 3-3V4a3 3 0 0 0-3-3H4z"/>
+              </svg></a>
+              <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+          
+            <div class="collapse navbar-collapse" id="navbarCollapse">
+                <div class="navbar-nav">
+                    <a href="#" class="nav-item nav-link active text-light">BROWSE</a>
+                    <a href="#" class="nav-item nav-link active text-light">CREATE OFFER</a>
+                    <a href="#" class="nav-item nav-link active text-light">TRADES</a>
+                </div>  
+           
+                <div class="navbar-nav ms-auto">
+                    
+                    <a href="#" class="nav-item nav-link active text-light"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-bell" viewBox="0 0 16 16">
+                        <path d="M8 16a2 2 0 0 0 2-2H6a2 2 0 0 0 2 2zM8 1.918l-.797.161A4.002 4.002 0 0 0 4 6c0 .628-.134 2.197-.459 3.742-.16.767-.376 1.566-.663 2.258h10.244c-.287-.692-.502-1.49-.663-2.258C12.134 8.197 12 6.628 12 6a4.002 4.002 0 0 0-3.203-3.92L8 1.917zM14.22 12c.223.447.481.801.78 1H1c.299-.199.557-.553.78-1C2.68 10.2 3 6.88 3 6c0-2.42 1.72-4.44 4.005-4.901a1 1 0 1 1 1.99 0A5.002 5.002 0 0 1 13 6c0 .88.32 4.2 1.22 6z"/>
+                      </svg></a>
+                    
+                    <a href="#" class="nav-item nav-link active text-light">LOG OUT</a>
+                    <a href="#" class="nav-item nav-link active text-light">KrishnaReddy</a>
+                    <a href="#" class="nav-item nav-link active text-light"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-person-circle" viewBox="0 0 16 16">
+                        <path d="M11 6a3 3 0 1 1-6 0 3 3 0 0 1 6 0z"/>
+                        <path fill-rule="evenodd" d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8zm8-7a7 7 0 0 0-5.468 11.37C3.242 11.226 4.805 10 8 10s4.757 1.225 5.468 2.37A7 7 0 0 0 8 1z"/>
+                      </svg></a>
+                </div> 
             </div>
         </div>
+    </nav>
+
+    <div class="text-center text-info">
+       <h5>USER PROFILE</h5>
+    </div>
+    <hr>
+    <div class="container">
+    <div class="row">
+        <div  class="col-md-3">
+            <div class="card rounded-circle text-center">
+                <div class="card-body">
+            <svg xmlns="http://www.w3.org/2000/svg" width="100" height="200" fill="currentColor" class="bi bi-person-fill" viewBox="0 0 16 16">
+                <path d="M3 14s-1 0-1-1 1-4 6-4 6 3 6 4-1 1-1 1H3Zm5-6a3 3 0 1 0 0-6 3 3 0 0 0 0 6Z"/>
+              </svg>
+            </div>
+        </div>
+        <div class="row mt-1">
+            <div class="col-md-12 rounded-3">
+                <div class="card shadow p-1 mb-1 bg-white rounded">
+                    <div class="card-body text-info fw-bold">
+                        User name
+                        <p class="text-dark fw-normal">KrishnaReddy</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row mt-1">
+            <div class="col-md-12">
+                <div class="card shadow p-1 mb-1 bg-white rounded">
+                    <div class="card-body text-info fw-bold">
+                        User Id
+                        <p class="text-dark fw-normal">20</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row mt-1">
+            <div class="col-md-12">
+                <div class="card shadow p-1 mb-1 bg-white rounded">
+                    <div class="card-body">
+                       <span class="text-info fw-bold"> Bank Account Details</span> <br/>
+                        <span class="fw-bold">Bank Name:<span class="fw-normal">Sbi</span></span> <br/>
+                        <span class="fw-bold">Account Name:<span class="fw-normal">Krishna reddy</span></span> <br/>
+                         <span class="fw-bold">Bank Number:<span class="fw-normal">133375222255</span></span> <br/>
+                        <span class="fw-bold">IFSC code:<span class="fw-normal">SBIN0011144</span></span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </div>
+       
+       
         
-    </body>
+        <div class="col-md-3 text-info">
+            <div class="card shadow p-1 mb-1 bg-white rounded">
+                <div class="card-body fw-bold">
+                    Type of Sign Up
+                </div>
+            </div>
+            <div class="row mt-2">
+                <div class="col-md-12">
+                    <div class="card shadow p-1 mb-1 bg-white rounded">
+                        <div class="card-body fw-bold">
+                            Profile Discription
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row mt-2">
+                <div class="col-md-12">
+                    <div class="card shadow p-1 mb-1 bg-white rounded">
+                        <div class="card-body fw-bold">
+                            Email
+                            <p class="text-dark fw-normal">krishnareddy.nnv@gmail.com</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row mt-2">
+                <div class="col-md-12">
+                    <div class="card shadow p-1 mb-1 bg-white rounded">
+                        <div class="card-body fw-bold">
+                            Phone Number
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row mt-2">
+                <div class="col-md-12">
+                    <div class="card shadow p-1 mb-1 bg-white rounded">
+                        <div class="card-body fw-bold">
+                            SMS Notification
+                            <p class="text-dark fw-normal">OFF</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+                
+            
+        </div>
+        <div class="col-md-3 text-info">
+            <div class="card shadow p-1 mb-1 bg-white rounded">
+                <div class="card-body fw-bold">
+                    Display Currency
+                </div>
+            </div>
+            <div class="row mt-2">
+                <div class="col-md-12">
+                    <div class="card shadow p-1 mb-1 bg-white rounded">
+                        <div class="card-body fw-bold">
+                            Trade History&nbsp;&nb<button type="button" class="btn btn-info ">Trade</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row mt-2">
+                <div class="col-md-12">
+                    <div class="card shadow p-1 mb-1 bg-white rounded">
+                        <div class="card-body fw-bold">
+                            E-Mail Notification
+                            <p class="text-dark fw-normal">OFF</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-3">
+            <div class="card shadow p-1 mb-1 bg-white rounded">
+                <div class="card-body">
+                   <span class="fw-bold text-info"> ETH <span class="float-end"> Bal:0</span></span>
+                    <p class="text-center">0xabaeed84.....09dad9bcb2<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-files" viewBox="0 0 16 16">
+                        <path d="M13 0H6a2 2 0 0 0-2 2 2 2 0 0 0-2 2v10a2 2 0 0 0 2 2h7a2 2 0 0 0 2-2 2 2 0 0 0 2-2V2a2 2 0 0 0-2-2zm0 13V4a2 2 0 0 0-2-2H5a1 1 0 0 1 1-1h7a1 1 0 0 1 1 1v10a1 1 0 0 1-1 1zM3 4a1 1 0 0 1 1-1h7a1 1 0 0 1 1 1v10a1 1 0 0 1-1 1H4a1 1 0 0 1-1-1V4z"/>
+                      </svg></p>
+                      <p class="text-dark text-center"><button type="button" class="btn btn-info">VIEW PRIVATEKEY</button></p>
+                </div>
+            </div>
+            <div class="row mt-2">
+                <div class="col-md-12">
+                <div class="card shadow p-1 mb-1 bg-white rounded">
+                    <div class="card-body">
+                       <span class="fw-bold text-info">BNB<span class="float-end"> Bal:0.0005</span></span>
+                        <p class="text-center">0xabaeed84.....09dad9bcb2<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-files" viewBox="0 0 16 16">
+                            <path d="M13 0H6a2 2 0 0 0-2 2 2 2 0 0 0-2 2v10a2 2 0 0 0 2 2h7a2 2 0 0 0 2-2 2 2 0 0 0 2-2V2a2 2 0 0 0-2-2zm0 13V4a2 2 0 0 0-2-2H5a1 1 0 0 1 1-1h7a1 1 0 0 1 1 1v10a1 1 0 0 1-1 1zM3 4a1 1 0 0 1 1-1h7a1 1 0 0 1 1 1v10a1 1 0 0 1-1 1H4a1 1 0 0 1-1-1V4z"/>
+                          </svg></p>
+                          <p class="text-dark text-center"><button type="button" class="btn btn-info">VIEW PRIVATEKEY</button></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row mt-2">
+            <div class="col-md-12">
+            <div class="card shadow p-1 mb-1 bg-white rounded">
+                <div class="card-body">
+                   <span class="fw-bold text-info"> TRX <span class="float-end"> Bal:2.950007</span></span>
+                    <p class="text-center">0xabaeed84.....09dad9bcb2<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-files" viewBox="0 0 16 16">
+                        <path d="M13 0H6a2 2 0 0 0-2 2 2 2 0 0 0-2 2v10a2 2 0 0 0 2 2h7a2 2 0 0 0 2-2 2 2 0 0 0 2-2V2a2 2 0 0 0-2-2zm0 13V4a2 2 0 0 0-2-2H5a1 1 0 0 1 1-1h7a1 1 0 0 1 1 1v10a1 1 0 0 1-1 1zM3 4a1 1 0 0 1 1-1h7a1 1 0 0 1 1 1v10a1 1 0 0 1-1 1H4a1 1 0 0 1-1-1V4z"/>
+                      </svg></p>
+                      <p class="text-dark text-center"><button type="button" class="btn btn-info">VIEW PRIVATEKEY</button></p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="row mt-2">
+        <div class="col-md-12">
+        <div class="card shadow p-1 mb-1 bg-white rounded">
+            <div class="card-body">
+               <span class="fw-bold text-info"> USDT <span class="float-end"> Bal:0</span></span>
+                <p class="text-center">0xabaeed84.....09dad9bcb2<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-files" viewBox="0 0 16 16">
+                    <path d="M13 0H6a2 2 0 0 0-2 2 2 2 0 0 0-2 2v10a2 2 0 0 0 2 2h7a2 2 0 0 0 2-2 2 2 0 0 0 2-2V2a2 2 0 0 0-2-2zm0 13V4a2 2 0 0 0-2-2H5a1 1 0 0 1 1-1h7a1 1 0 0 1 1 1v10a1 1 0 0 1-1 1zM3 4a1 1 0 0 1 1-1h7a1 1 0 0 1 1 1v10a1 1 0 0 1-1 1H4a1 1 0 0 1-1-1V4z"/>
+                  </svg></p>
+                  <p class="text-center"><button type="button" class="btn btn-info"><p class="text-dark">VIEW PRIVATEKEY</p></button></p>
+            </div>
+        </div>
+    </div>
+    <div class="mt-3">
+    <button type="button" class="btn btn-info"><p class="text-dark">EDIT PROFILE</p></button>
+</div>
+</div>
+        </div>
+    
+</div>
+</div>
+</body>
 </html>
