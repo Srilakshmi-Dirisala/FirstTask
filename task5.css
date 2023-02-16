@@ -1,0 +1,103 @@
+body {
+    background-image: url("./images/blueimg.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+@media (max-width:600px) {
+    .med {
+       margin-left: 10%;
+       padding: 5px;
+
+    } 
+    .box-2{
+        margin-left: 15%;
+    }
+    .box-3{
+     padding: 5px;
+    margin-left: 15%;
+     
+     
+    }
+   
+}
+@media (min-width:1024px) {
+    .med {
+        margin-left: 10%;
+       padding: 5px;
+
+    } 
+    .box-4{
+     padding: 3px;
+    margin-right: 10%;
+     
+     
+    }
+   
+}
+@media (min-width:768px) {
+     .med {
+        
+        position: relative;
+  height: 200px;
+  width:2%;
+   
+  padding-right: 10%;     
+  letter-spacing: -1px;
+  margin-left: 10%;
+
+
+     } 
+     .box-2{
+      width:10%;
+      text-align: center;
+     margin-right: 10%;
+      
+      
+     }
+     
+    }
+    /* @media (max-width:768px) {
+        .med {
+           
+           position: relative;
+     height: 200px;
+     width:2%;
+      
+     padding-right: 10%;     
+     letter-spacing: -1px;
+     margin-left: 20%;
+   
+   
+        } 
+        .box-2{
+         width:10%;
+         text-align: center;
+        margin-right: 15%;
+        margin-left: 10%;
+        
+         
+         
+        }
+        .box-3{
+            margin-right: 10%;
+        }
+       } */
+     @media (min-width:1440px) {
+        .med {
+            margin-right: 10%;
+           padding: 5px;
+    
+        } 
+        .box-3{
+          
+            margin-right: 20%;
+    
+        }
+        .box-4{
+       
+        margin-right: 10%;
+         
+         
+        }
+    
+}
